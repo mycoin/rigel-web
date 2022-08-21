@@ -1,6 +1,6 @@
 {
   "name": "rigel-web",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "rigel web utils.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
