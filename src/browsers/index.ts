@@ -1,3 +1,4 @@
+import attachMousewheel from './attachMousewheel'
 import clipboardCopy from './clipboardCopy'
 import closest from './closest'
 import delegateEvent from './delegateEvent'
@@ -9,8 +10,10 @@ import loadCss from './loadCss'
 import loadScript from './loadScript'
 import replaceStateWith from './replaceStateWith'
 import scrollIntoView from './scrollIntoView'
+import sendBeacon from './sendBeacon'
 
 export default {
+  attachMousewheel,
   clipboardCopy,
   closest,
   delegateEvent,
@@ -22,4 +25,5 @@ export default {
   loadScript,
   replaceStateWith,
   scrollIntoView,
+  sendBeacon,
 }

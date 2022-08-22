@@ -1,5 +1,6 @@
 /**
  * 请勿将其改为箭头函数
+ *
  * @returns
  */
 function getCurrentScript(): HTMLScriptElement {
@@ -58,7 +59,6 @@ function getCurrentScript(): HTMLScriptElement {
         }
       }
     }
-
     // If no match, return null
     return null
   }

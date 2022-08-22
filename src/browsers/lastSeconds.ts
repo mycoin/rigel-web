@@ -1,17 +1,16 @@
 const lastSeconds = () => {
-  const context = {
-    value: 0,
-    timer: setInterval(() => {
-      if (!/hidden/i.test(document.visibilityState)) {
-        context.value++
-      }
-    }, 1000),
-  }
+  let value = 0
+  let timer: any = null
+  timer = setInterval(() => {
+    if (!/hidden/i.test(document.visibilityState)) {
+      value++
+    }
+  })
   return (stop?: boolean) => {
     if (stop === true) {
-      clearInterval(context.timer)
+      clearInterval(timer)
     }
-    return context.value
+    return value
   }
 }
 
