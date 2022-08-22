@@ -3,6 +3,7 @@ import clipboardCopy from './clipboardCopy'
 import closest from './closest'
 import delegateEvent from './delegateEvent'
 import download from './download'
+import elementMatches from './elementMatches'
 import getCurrentScript from './getCurrentScript'
 import getElementPath from './getElementPath'
 import lastSeconds from './lastSeconds'
@@ -18,6 +19,7 @@ export default {
   closest,
   delegateEvent,
   download,
+  elementMatches,
   getCurrentScript,
   getElementPath,
   lastSeconds,

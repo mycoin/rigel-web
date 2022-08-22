@@ -1,23 +1,22 @@
-主要依赖
+# 杂项工具
 
-- `EventEmitter` 依赖于 events@3 https://www.npmjs.com/package/events
-- `Queue` 依赖于 queue@6 https://www.npmjs.com/package/queue
-- `Middleware` 参考来自：`js-middleware`
+browsers：
 
-简单工具：
+- `attachMousewheel`: (target: HTMLElement, callback: Function) => void;
+- `clipboardCopy`: (text: any, callback: any) => void;
+- `closest`: (element: Element, selector: string) => Function;
+- `delegateEvent`: (elements: HTMLElement | string, selector: string, type: string, callback: Function, useCapture: boolean) => void;
+- `download`: (data: any, filename: any, gcTimeout: any) => void;
+- `elementMatches`: (element: Element, selector: string) => boolean;
+- `getCurrentScript`: () => HTMLOrSVGScriptElement | null;
+- `getElementPath`: (element: any) => any;
+- `lastSeconds`: () => (stop: any) => number;
+- `loadCss`: (url: any, callback: any) => void;
+- `loadScript`: (url: any, callback: any) => void;
+- `replaceStateWith`: (params: StringifiableRecord) => boolean;
+- `scrollIntoView`: (element: any, compensation: any) => void;
+- `sendBeacon`: (targetUrl: any, content: any) => boolean | undefined;
 
-- `classNames`: typeof classNames;
-- `compose`: (...funcs: Function[]) => Function;
-- `executeSafe`: (method: () => any, defaultValue?: any) => any;
-- `format`: (tplString: string, dataMap: Record<string, any>) => string;
-- `getGuid`: (operator: string | true) => string;
-- `getNumberValue`: (value: any, opts?: import("./getNumberValue").GetNumberValueOption) => number;
-- `hashCode`: (source: string) => number;
-- `isMatches`: (handle: Function | RegExp | any[], params: any) => boolean;
-- `observe`: (object: any, keyName: string, callback: (prev: any, next: any) => void) => void;
-- `parseParam`: (query: string, options?: XParseOptions) => import("query-string").ParsedQuery<string>;
-- `parseUrl`: (url: string, options?: XParseOptions) => import("query-string").ParsedUrl;
-- `throwAsync`: (error: string | Error) => void;
-- `toParam`: (queryParams: Record<string, any>, options?: import("./parseUrl").XParseOptions) => string;
-- `toUrl`: (url: string, queryParams: StringifiableRecord, options?: .XParseOptions) => string;
-- `warning`: (...messages: any[]) => void;
+---
+
+> 谨慎使用
