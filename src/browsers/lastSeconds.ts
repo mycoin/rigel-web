@@ -5,7 +5,7 @@ const lastSeconds = () => {
     if (!/hidden/i.test(document.visibilityState)) {
       value++
     }
-  })
+  }, 1000)
   return (stop?: boolean) => {
     if (stop === true) {
       clearInterval(timer)
