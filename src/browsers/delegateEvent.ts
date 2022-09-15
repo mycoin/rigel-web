@@ -31,7 +31,7 @@ function _delegate(element: any, selector: any, type: any, callback: any, useCap
  * @param {Boolean} useCapture
  * @return {Object}
  */
-function delegateEvent(elements: HTMLElement | string, selector: string, type: string, callback: Function, useCapture: boolean) {
+function delegateEvent(elements: HTMLElement | string, selector: string, type: string, callback: Function, useCapture?: boolean) {
   // Handle the regular Element usage
   if (elements && typeof (elements as any).addEventListener === 'function') {
     return _delegate.apply(null, arguments)
