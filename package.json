@@ -1,6 +1,6 @@
 {
   "name": "rigel-web",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "rigel web utils.",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -22,8 +22,9 @@
     "url": "git+ssh://git@github.com/mycoin/rigel-web.git"
   },
   "dependencies": {
-    "rigel": "^0.0.2",
-    "rigel-base": "^0.0.5"
+    "query-string": "^9.2.2",
+    "rigel": "^0.0.3",
+    "rigel-base": "^0.0.19"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.18.10",
